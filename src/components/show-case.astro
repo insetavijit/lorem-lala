@@ -1,0 +1,39 @@
+---
+const repeat = Array.from({ length: 6 });
+---
+
+<section class="container py-4">
+  <!-- Navigation -->
+  <header class="mb-4">
+    <nav>
+      <ul class="list-unstyled d-flex gap-3 flex-wrap">
+        <li>Lorem, ipsum.</li>
+        <li>Libero, cum!</li>
+        <li>Hic, voluptas.</li>
+        <li>Non, maiores.</li>
+        <li>Libero, voluptas!</li>
+        <li>Assumenda, dolores!</li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Showcase -->
+  <footer class="row g-4">
+    <div class="d-flex gap-3 overflow-auto py-3">
+      {
+        repeat.map(() => (
+          <article class="card w-auto border-0">
+            <img
+              src="holder.js/200x300?theme=gray"
+              class="card-img-top rounded"
+            />
+            <footer class="card-body p-2">
+              <h3 class="card-text small mb-0">Caption Caption one</h3>
+              <p>lorem</p>
+            </footer>
+          </article>
+        ))
+      }
+    </div>
+  </footer>
+</section>
