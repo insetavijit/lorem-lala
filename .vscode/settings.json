@@ -1,18 +1,20 @@
 {
-    // Enable Astro support
-    "astro.enabled": true,
-    "emmet.includeLanguages": { "astro": "html" },
+  // Enable Astro + Emmet
+  "astro.enabled": true,
+  "emmet.includeLanguages": { "astro": "html" },
 
-    // Enable Bootstrap IntelliSense
-    "html-css-class-completion.includeGlobPattern": "**/*.{html,astro,css,scss,sass}",
-    "html-css-class-completion.enableEmmetSupport": true,
-    "html-css-class-completion.HTMLLanguages": ["html", "astro"],
-    "html-css-class-completion.CSSLanguages": ["css", "scss"],
-    "css.remoteStyleSheets": [
-      "./node_modules/bootstrap/dist/css/bootstrap.min.css"
-    ],
+  // Bootstrap IntelliSense
+  "html-css-class-completion.includeGlobPattern": "**/*.{html,astro,css,scss,sass}",
+  "html-css-class-completion.enableEmmetSupport": true,
+  "html-css-class-completion.HTMLLanguages": ["html", "astro"],
+  "html-css-class-completion.CSSLanguages": ["css", "scss"],
 
-    // Optional: Editor preferences
-    "editor.tabSize": 2,
-    "editor.formatOnSave": true
-  }
+  // WORKING LOCAL PATH (absolute)
+  "html-css-class-completion.localStyleSheets": [
+    "${workspaceFolder}/node_modules/bootstrap/dist/css/bootstrap.min.css"
+  ],
+
+  // Editor
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true
+}
